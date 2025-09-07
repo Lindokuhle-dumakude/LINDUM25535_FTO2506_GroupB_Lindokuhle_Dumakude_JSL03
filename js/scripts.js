@@ -31,4 +31,20 @@ for (let i = 1; i <= 3; i++) {
     );
     break; // Stop loop if limit is reached
   }
+
+  // Prompt user for  task details
+
+  let title = prompt(`Enter the title for Task ${initialTasks.length + 1}:`);
+  let description = prompt(
+    `Enter the description for Task ${initialTasks.length + 1}:`
+  );
+
+  // Ask for status & validate
+
+  let status = prompt(`Enter status (todo, doing, done):`).toLowerCase();
+
+  while (status !== "todo" && status !== "doing" && status !== "done") {
+    alert("Invalid status! Please enter: todo, doing, or done.");
+    status = prompt(`Enter status (todo, doing, done):`).toLowerCase();
+  }
 }
