@@ -56,4 +56,8 @@ for (let i = 1; i <= 3; i++) {
     description: description,
     status: status,
   };
+
+  // Add new task to array
+
+  initialTasks.push(newTask);
 }
