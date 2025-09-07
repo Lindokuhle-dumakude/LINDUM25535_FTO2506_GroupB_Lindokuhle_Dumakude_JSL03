@@ -1,75 +1,113 @@
-# 🗂️ Kanban Board
+# 🗂️ Kanban Board - Task Management system
 
-**Kanban Board** built from a **Figma design**, using **HTML** and **CSS**.  
-The board allows users to visualize tasks across different stages: **TODO**, **DOING**, and **DONE**.
+A simple **Kanban Board** project built using **HTML, CSS, and JavaScript**.  
+This system allows you to **manage your tasks efficiently** by creating, updating, and tracking them through different statuses: **Todo**, **Doing**, and **Done**.
 
 ---
 
-## 🔹 Overview
+## 📖 Project Description
 
-This project is a **Kanban Board** where tasks are visually organized into columns.  
-It was designed from a **Figma UI design**.
+This project demonstrates how to:
+
+- Store, update, and manage **tasks dynamically**.
+- Use **JavaScript arrays & objects** for efficient data handling.
+- Validate user input and handle incorrect entries gracefully.
+- Filter completed tasks and display them separately.
+
+The system starts with **three predefined tasks** and lets you add **up to three more tasks**.  
+It automatically **validates statuses** (`todo`, `doing`, `done`) and displays **all tasks** and **completed tasks** in the browser console.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** → Structure of the Kanban board
+- **CSS3** → Styling and responsive layout
+- **JavaScript (ES6)** → Task management logic, data storage, and validation
 
 ---
 
 ## ✨ Features
 
-✅ **Navigation Sidebar** — Displays logo, available boards, and buttons  
-✅ **Task Columns** — Tasks grouped into **TODO**, **DOING**, and **DONE**  
-✅ **Hover Effects** — Interactive button styles
-✅ **Pixel-perfect UI** — Matches the provided Figma design  
-✅ **Responsive Layout** — Optimized for **desktop**, **tablet**, and **mobile**  
-✅ **Custom Google Font** — Uses _Plus Jakarta Sans_ for a modern look
+### **Created**
+
+- Display of **three default tasks**.
+- Ability to **add up to three new tasks** dynamically.
+- Automatic **ID generation** for new tasks.
+- Input **validation** to ensure only valid statuses are stored.
+
+### **Updated**
+
+- New feature: Filter and display **completed tasks**.
+- Added **limit checking** → Prevents adding more than **six tasks total**.
+- Improved **user feedback** using `alert()` messages.
+- Enhanced **console output formatting** for better readability.
 
 ---
 
-## 🚀 Installation & Usage
+## ⚡ Setup Instructions
 
-### 1. Clone the repository
+Follow these steps to set up the project locally:
 
-git clone https://github.com/Lindokuhle-dumakude/LINDUM25535_FTO2506_GroupB_Lindokuhle_Dumakude_JSL01.git
+### **1. Clone the repository**
 
-cd LINDUM25535_FTO2506_GroupB_Lindokuhle_Dumakude_JSL01
+```bash
+git clone https://github.com/Lindokuhle-dumakude/LINDUM25535_FTO2506_GroupB_Lindokuhle_Dumakude_JSL03.git
+```
 
-Open Browser - Double click index.html file.
+### 🗂️ **2. Open the project folder**
+
+- cd LINDUM25535_FTO2506_GroupB_Lindokuhle_Dumakude_JSL03
+
+### **3. Open in your browser**
+
+- Double-click on index.html
+
+---
+
+## 🕹️ Usage Instructions
+
+1. Open the project in your browser.
+
+2. Open the Developer Console:
+
+- On Windows/Linux → Press F12 → Go to Console Tab.
+- On Mac → Press Option + ⌘ + J.
+
+3. When prompted, enter:
+
+- Task title
+- Task description
+- Task status → Must be one of:
+
+      ` todo`
+      ` doing`
+      ` done `
+
+4. Check the console output for:
+
+- All tasks
+- Completed tasks
 
 ---
 
-## 🔮 Future Improvements
+## 🧩 Working Example
 
-- Add **Hamburger menu** for mobile responsiveness
+### **User Input**:
 
----
+```
+Enter the title for Task 4: Build Portfolio Website
+Enter the description for Task 4: Showcase my projects
+Enter status (todo, doing, done): done
 
-## 🧩 JavaScript Functionality
+```
 
-This project includes a simple **task input and status validation system** implemented in JavaScript.  
-The code allows the user to **enter two tasks** and stores their details using prompts.
+### **User Output**:
 
-### **Technologies used**
+1. All tasks
 
-- JSL 🧩
+![alt text](<js-example-1.png>)
 
-### **How It Works**
+2. Completed Tasks
 
-1. The program declares variables to store **task titles**, **descriptions**, and **statuses** for two tasks.
-2. It uses a **for loop** to:
-   - Prompt the user to enter the **task title**
-   - Prompt the user to enter the **task description**
-   - Prompt the user to enter the **task status** (`todo`, `doing`, or `done`)
-3. Input validation ensures that the **status** can only be `"todo"`, `"doing"`, or `"done"`.  
-   If the user enters an invalid status, they are prompted again until a valid value is entered.
-4. Once the user enters all the information:
-   - If the task’s status is `"done"`, the program **logs the task details** to the console.
-   - If the task isn’t marked as done, the program outputs:  
-     **"No tasks completed, let's get to work!"**
-
-### **Example Output**
-
-![alt text](image.png)
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
-
----
+![alt text](<js-example-2.png>)
