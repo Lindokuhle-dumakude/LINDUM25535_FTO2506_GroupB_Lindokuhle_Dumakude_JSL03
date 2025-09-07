@@ -61,3 +61,7 @@ for (let i = 1; i <= 3; i++) {
 
   initialTasks.push(newTask);
 }
+
+// Log all tasks
+
+console.log(initialTasks);
