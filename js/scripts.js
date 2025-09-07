@@ -63,9 +63,17 @@ for (let i = 1; i <= 3; i++) {
 }
 
 // Log all tasks
-
+console.log("=== ALL TASKS ===");
 console.log(initialTasks);
 
 // Filter completed tasks
 
 const completedTasks = initialTasks.filter((task) => task.status === "done");
+
+// Log completed tasks
+if (completedTasks.length > 0) {
+  console.log("=== COMPLETED TASKS ===");
+  console.log(completedTasks);
+} else {
+  console.log("No tasks completed, let's get to work!");
+}
