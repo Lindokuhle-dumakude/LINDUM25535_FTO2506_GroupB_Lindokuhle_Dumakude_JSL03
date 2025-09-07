@@ -47,4 +47,13 @@ for (let i = 1; i <= 3; i++) {
     alert("Invalid status! Please enter: todo, doing, or done.");
     status = prompt(`Enter status (todo, doing, done):`).toLowerCase();
   }
+
+  // Create new task object
+
+  let newTask = {
+    id: initialTasks.length + 1, // increment ID
+    title: title,
+    description: description,
+    status: status,
+  };
 }
