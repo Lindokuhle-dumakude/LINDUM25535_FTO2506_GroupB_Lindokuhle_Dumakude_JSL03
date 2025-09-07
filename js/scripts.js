@@ -65,3 +65,7 @@ for (let i = 1; i <= 3; i++) {
 // Log all tasks
 
 console.log(initialTasks);
+
+// Filter completed tasks
+
+const completedTasks = initialTasks.filter((task) => task.status === "done");
