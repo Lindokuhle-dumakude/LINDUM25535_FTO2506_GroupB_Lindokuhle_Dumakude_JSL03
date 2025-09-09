@@ -23,15 +23,6 @@ const initialTasks = [
 // Allow to add up to 3 new tasks
 
 for (let i = 1; i <= 3; i++) {
-  // if limit reached
-
-  if (initialTasks.length >= 6) {
-    alert(
-      "There are enough tasks on your board, please check them in the console."
-    );
-    break; // Stop loop if limit is reached
-  }
-
   // Prompt user for  task details
 
   let title = prompt(`Enter the title for Task ${initialTasks.length + 1}:`);
@@ -60,6 +51,14 @@ for (let i = 1; i <= 3; i++) {
   // Add new task to array
 
   initialTasks.push(newTask);
+}
+
+// if task limit reached send Alert to user.
+
+if (initialTasks.length >= 6) {
+  alert(
+    "There are enough tasks on your board, please check them in the console."
+  );
 }
 
 // Log all tasks
